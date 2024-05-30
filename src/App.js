@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import Section from "./components/Section"
+import Weather from "./components/Weather"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="container" >
+      <Header/>
+      <div style={{ width: '280px', margin: '0 auto' }}>
+      <Weather/>
     </div>
-  );
+      <Section/>
+      <Footer/>
+          <video autoPlay loop muted>
+            <source src="../images/starsbk1.mp4" type="video/mp4" />
+          </video>
+      </div>
+    );
+  }
 }
 
 export default App;

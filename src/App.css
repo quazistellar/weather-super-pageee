@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  background-position: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.header-text {
+  font-family: Arial Black;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+  h1.header-text:hover {
+         transform: scale(1.1);
+         text-shadow: 0 0 10px #0000FF;
+      }
+
+
+.headerr {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #483D8B;
+  color: #fff;
+}
+
+.header-text {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+footer {
+  position: fixed;
+  background-color: #FFE4E1;
+  padding: 20px;
+  margin-top: 3px;
+  border-radius: 30px;
+  width: 1200px;
+  height: 130px;
+  margin-bottom: -490px;
+  margin-left: 5px;
+}
+
+footer p {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: darkblue;
+  text-align: center;
+  font-family: Arial Black;
+}
+
+footer ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 140px 170px 210px 180px 140px 180px 60px;
+  padding: 3 3;
+  color: #800080;
+  font-family: Arial Black;
+
+}
+
+footer li {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+
+.headfot{
+ font-family: Arial Black;
+ font-size: 17px;
+}
+
+
+.form-container {
+  padding: 10 10;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  gap: 20px;
+  position: relative;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-right: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #4B0082;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
   color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-card {
+  margin-right: 10px;
+  width: 130px;
+  padding: 10 6px;
+  gap: 8px;
+  background-color: #483D8B;
+  font-family: Arial Black;
+  font-size: 15px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-info {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  gap: 10px;
+  margin-top: -400px;
+  margin-left: -290px;
+  font-family: Arial Black;
+  text-shadow: -2px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.prognoz {
+     font-family: Arial Black;
+     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+
+.changecolor {
+    width: 300px;
+    height: 300px;
+    color: red;
+
+}
+
+.btnser {
+     transition: transform 0.5s;
+}
+
+.btnser:hover {
+    transform: scale(1.2);
+}
+
+.current{
+    position: relative;
+    color: white;
+    font-family: Arial Black;
+    margin-left: 15px;
+    width: 340px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.container1 {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.con2 {
+  width: 100%;
+  height: 100%;
 }
